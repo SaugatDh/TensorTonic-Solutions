@@ -6,8 +6,9 @@ def make_diagonal(v):
     """
     # Write code here
     v = np.asarray(v)
-    n = v.shape[0]
-    Z = np.zeros((n,n))
-    for i in range(n):
-        Z[i,i] = v[i]
-    return Z
+    # n = v.shape[0]
+    # Z = np.zeros((n,n))
+    # for i in range(n):
+    #     Z[i,i] = v[i]
+    # return Z
+    return np.diag(v)
