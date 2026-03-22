@@ -9,10 +9,7 @@ def matrix_normalization(matrix, axis=None, norm_type='l2'):
         if matrix.ndim != 2:
             return None
         # Validate axis bounds to satisfy test requirements
-        if axis is not None:
-            if axis >= matrix.ndim or axis < -matrix.ndim:
-                return None
-
+  
         # 1. Calculate the norm using NumPy primitives
         if norm_type == 'l2':
             # Euclidean Norm: sqrt(sum(x^2))
