@@ -1,9 +1,6 @@
 import numpy as np
 
 def matrix_normalization(matrix, axis=None, norm_type='l2'):
-    """
-    Normalize a matrix using basic NumPy operations with error handling.
-    """
     try:
         matrix = np.asarray(matrix, dtype=float)
         if matrix.ndim != 2:
