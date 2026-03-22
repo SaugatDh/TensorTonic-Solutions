@@ -12,5 +12,5 @@ def matrix_inverse(A):
     if m!=n:
         return None
     if np.linalg.det(A) == 0:
-        return
+        return None
     return np.linalg.inv(A)
